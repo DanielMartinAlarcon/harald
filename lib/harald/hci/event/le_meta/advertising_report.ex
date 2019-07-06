@@ -43,14 +43,14 @@ defmodule Harald.HCI.Event.LEMeta.AdvertisingReport do
       ...>         address_type: 1,
       ...>         address: 2,
       ...>         data: [],
-      ...>         rss: 4
+      ...>         rssi: 4
       ...>       },
       ...>       %AdvertisingReport.Device{
       ...>         event_type: 1,
       ...>         address_type: 2,
       ...>         address: 5,
       ...>         data: [{"Service Data - 32-bit UUID", %{uuid: 1, data: <<2>>}}],
-      ...>         rss: 7
+      ...>         rssi: 7
       ...>       }
       ...>     ]
       ...>   }
@@ -79,14 +79,14 @@ defmodule Harald.HCI.Event.LEMeta.AdvertisingReport do
               address_type: 1,
               address: 2,
               data: [],
-              rss: 4
+              rssi: 4
             },
             %AdvertisingReport.Device{
               event_type: 1,
               address_type: 2,
               address: 5,
               data: [{"Service Data - 32-bit UUID", %{uuid: 1, data: <<2>>}}],
-              rss: 7
+              rssi: 7
             }
           ]
         }

@@ -1,12 +1,12 @@
 defmodule Harald.HCI.ArrayedDataTest do
   use ExUnit.Case, async: true
-  alias Harald.HCI.{ArrayedData, Event.LEMeta.AdvertisingReport.Device}
+  alias Harald.HCI.ArrayedData
 
   doctest ArrayedData, import: true
 
   describe "deserialize/4" do
     test "an empty binary results in an error" do
-      assert {:error, <<>>} == ArrayedData.deserialize([], 1, Device, <<>>)
+      assert {:error, <<>>} == ArrayedData.deserialize([], 1, <<>>)
     end
   end
 end
